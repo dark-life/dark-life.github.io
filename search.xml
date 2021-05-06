@@ -26,7 +26,26 @@
   <entry>
     <title>Manjaro的基本配置</title>
     <url>/2021/05/06/Manjaro%E7%9A%84%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>换源</p>
+<figure class="highlight plain"><figcaption><span>pacman-mirrors -i -c China -m rank</span></figcaption><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>添加archlinuxcn源</p>
+<figure class="highlight plain"><figcaption><span>-e "\n[archlinuxcn]\nSigLevel </span></figcaption><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>更新软件包</p>
+<figure class="highlight plain"><figcaption><span>pacman -Syyu</span></figcaption><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>导入GPG key</p>
+<figure class="highlight plain"><figcaption><span>pacman -S archlinuxcn-keyring</span></figcaption><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>换yay</p>
+<figure class="highlight plain"><figcaption><span>pacman -Sy yay</span></figcaption><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>安装输入法</p>
+<figure class="highlight plain"><figcaption><span>pacman -S fcitx-im (#默认全部安装)</span></figcaption><table><tr><td class="code"><pre><span class="line">sudo pacman -S fcitx-configtool</span><br><span class="line">sudo pacman -S fcitx-sogoupinyin (#安装搜狗拼音)</span><br><span class="line">sudo vim ~&#x2F;.xprofile</span><br><span class="line">在文件中添加如下内容</span><br><span class="line">export GTK_IM_MODULE&#x3D;fcitx</span><br><span class="line">export QT_IM_MODULE&#x3D;fcitx</span><br><span class="line">export XMODIFIERS&#x3D;&quot;@im&#x3D;fcitx&quot;</span><br></pre></td></tr></table></figure>
+
+<p>p9k_init_params:72: character not in range manjaro%</p>
+<figure class="highlight plain"><figcaption><span>en_US.UTF-8 UTF-8 | sudo tee -a</span><a href="/etc/locale.gen">英文</a></figcaption><table><tr><td class="code"><pre><span class="line">echo zh_CN.UTF-8 UTF-8 | sudo tee -a &#x2F;etc&#x2F;locale.gen 中文</span><br><span class="line">sudo locale-gen</span><br></pre></td></tr></table></figure>]]></content>
       <tags>
         <tag>Linux</tag>
       </tags>
