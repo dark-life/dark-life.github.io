@@ -29,6 +29,12 @@
 <p>选择Public对外公布网站内容</p>
 <p>添加一个README文件可以对此项目进行说明</p>
 <p><img src="https://i.loli.net/2021/05/06/r4LOfxb7EzRBciA.png" alt="create.png"></p>
+<h3 id="添加网页文件"><a href="#添加网页文件" class="headerlink" title="添加网页文件"></a>添加网页文件</h3><p>创建完成，点击Upload files</p>
+<p><img src="https://i.loli.net/2021/05/06/GxE8WzhZDbq4Nnp.png" alt="QQ图片20210506191905.png"></p>
+<p>将文件放入空白处（需注意放入的首页网页文件名称必须为index.html），点击Commit changes</p>
+<p><img src="https://i.loli.net/2021/05/06/tPxIGX6vCSyZAJg.png" alt="QQ图片20210506192624.png"></p>
+<h3 id="最终结果"><a href="#最终结果" class="headerlink" title="最终结果"></a>最终结果</h3><p>完成后便可在浏览器上进行访问</p>
+<p><img src="https://i.loli.net/2021/05/06/rKa5QiXyBfAlCc9.png" alt="QQ截图20210506193150.png"></p>
 ]]></content>
       <tags>
         <tag>Github</tag>
